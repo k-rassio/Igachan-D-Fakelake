@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>{% block title %}Igachan's Fakelake{% endblock %}</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="{{ url_for('top') }}">
+                <h1>Igachan's Fakelake</h1>
+            </a>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div>
+            <a href="{{ url_for('top') }}">
+                <h1>Igachan's Fakelake</h1>
+            </a>
+        </div>
+        <p>(C) 2022 ぐりといが</p>
+    </footer>
+</body>
+
+</html>
