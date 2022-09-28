@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # pythonイメージを取得
-FROM python:3.8-slim-buster
+FROM python:3.10-slim-buster
 
 # コンテナの作業ディレクトリ
 WORKDIR /Igachan-D-Fakelake
@@ -22,7 +22,7 @@ RUN poetry export -f requirements.txt > requirements.txt
 RUN pip install -r requirements.txt
 
 # 環境変数の設定
-ENV FLASK_APP hello
+ENV FLASK_APP ./app/hello
 ENV FLASK_ENV produciton
 
 # コンテナの実行
