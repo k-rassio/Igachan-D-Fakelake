@@ -3,7 +3,44 @@
 {% block content %}
 <h2>見出し</h2>
 <p>コンテンツ</p>
-<form action="/download", method="get">
-    <button type="submit">CSVダウンロード</button>
-</form>
+
+<table>
+    <tr>
+      <th>分類</th> <th>CSVダウンロード</th> <th>詳細</th>
+    </tr>
+    <tr>
+      <td>twitter</td>
+      <td>
+        <form action="/download", method="get">
+            <button type="submit" name="csv_name" value="1.csv">ダウンロード</button>
+        </form>
+      </td>
+      <td>
+        <a href="{{ url_for('detail') }}" target="_blank">詳細</a>
+      </td>
+    </tr>
+    <tr>
+      <td>weibo</td>
+      <td>
+        <form action="/download", method="get">
+            <button type="submit" name="csv_name" value="2.csv">ダウンロード</button>
+        </form>
+      </td>
+      <td>
+        <a href="{{ url_for('detail') }}" target="_blank">詳細</a>
+      </td>
+    </tr>
+    <tr>
+      <td>facebook</td>
+      <td>
+        <form action="/download", method="get">
+            <button type="submit" name="csv_name" value="3.csv">ダウンロード</button>
+        </form>
+      </td>
+      <td>
+        <a href="{{ url_for('detail') }}" target="_blank">詳細</a>
+      </td>
+    </tr>
+</table>
+
 {% endblock %}
