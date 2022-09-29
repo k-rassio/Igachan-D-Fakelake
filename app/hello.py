@@ -16,7 +16,8 @@ def download():
 
 @app.route('/detail')
 def detail():
-    data = read_csv('1.csv')
+    filename = request.args.get('csv_name')
+    data = read_csv(filename)
     return render_template("detail.html", data=data) # templatesフォルダ内のindex.htmlを表示する
 
 def read_csv(filename):
