@@ -15,3 +15,6 @@
 `sudo docker build --tag igachan-d-fakelake .`  
 - 8000番ポートで起動します。  
 `sudo docker run -d -p 8000:5000 igachan-d-fakelake `  
+
+## csvの拡張子について
+- shift-jisでの管理とする
