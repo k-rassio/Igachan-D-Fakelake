@@ -1,51 +1,51 @@
-﻿編,章,章のタイトル,目標番号,目標区分,目標内容,達成可否の判定条件
-企業IT,,,,,,
-,1,ネットワーク領域,1.1,必達,社内NWを構成するネットワークについて理解する,社内NWを構成する３つのネットワークについて説明できる
-,2,社内NWの侵入経路,2.1,必達,社内NWに侵入するための経路を見つけるために、外部公開されている機器について理解できる,外部公開されている機器について説明できる
-,,,2.2,必達,内部NW上の業務PCから侵入するために、ユーザの業務を理解する,内部NW上の端末において行われるユーザの業務について説明できる
-,3,社内NWに存在するセキュリティ機器,3.1,必達,ネットワークの通信を制御するNW機器について理解する,ネットワークの通信を制御するNW機器について説明できる
-,,,3.2,必達,クライアント端末のセキュリティ対策について理解する,クライアント端末のセキュリティ対策について説明できる
-,,,3.3,必達,その他のNW機器について理解する,その他のNW機器について説明できる
+��,��,�͂̃^�C�g��,�ڕW�ԍ�,�ڕW�敪,�ڕW���e,�B���ۂ̔������
+���IT,,,,,,
+,1,�l�b�g���[�N�̈�,1.1,�K�B,�Г�NW���\������l�b�g���[�N�ɂ��ė�������,�Г�NW���\������R�̃l�b�g���[�N�ɂ��Đ����ł���
+,2,�Г�NW�̐N���o�H,2.1,�K�B,�Г�NW�ɐN�����邽�߂̌o�H�������邽�߂ɁA�O�����J����Ă���@��ɂ��ė����ł���,�O�����J����Ă���@��ɂ��Đ����ł���
+,,,2.2,�K�B,����NW��̋Ɩ�PC����N�����邽�߂ɁA���[�U�̋Ɩ��𗝉�����,����NW��̒[���ɂ����čs���郆�[�U�̋Ɩ��ɂ��Đ����ł���
+,3,�Г�NW�ɑ��݂���Z�L�����e�B�@��,3.1,�K�B,�l�b�g���[�N�̒ʐM�𐧌䂷��NW�@��ɂ��ė�������,�l�b�g���[�N�̒ʐM�𐧌䂷��NW�@��ɂ��Đ����ł���
+,,,3.2,�K�B,�N���C�A���g�[���̃Z�L�����e�B�΍�ɂ��ė�������,�N���C�A���g�[���̃Z�L�����e�B�΍�ɂ��Đ����ł���
+,,,3.3,�K�B,���̑���NW�@��ɂ��ė�������,���̑���NW�@��ɂ��Đ����ł���
 Initial Access&Execution,,,,,,
-,2,Initial Access,1.1,必達,Initial Accessに分類される攻撃手法を理解する,攻撃フローにおけるInitial Accessについて説明できる
-,,,,,,Initial Accessの例としてサーバサイドに分類できる攻撃の手法を説明できる
-,,,,,,Initial Accessの例としてクライアントサイドに分類できる攻撃の手法を説明できる
-,3,Execution,2.1,必達,Executionに分類される攻撃手法を理解する,攻撃フローにおけるExecutionについて説明できる
-,,,,,,Executionの例としてOSがデフォルトで提供するソフトウェアを悪用する攻撃手法を説明できる
-,,,,,,Executionの例としてOSがデフォルトで提供しないソフトウェアを悪用する攻撃手法を説明できる
-,4,攻撃シナリオ作成演習,3.1,必達,攻撃シナリオを検討できるようになる,Reconaissance～Executionまでの攻撃手法をATT&CKのTechniqueと紐付けて考えられる
-,,,,,,"環境に合わせて最適なInitial Access, Executionの手法を選択できる"
+,2,Initial Access,1.1,�K�B,Initial Access�ɕ��ނ����U����@�𗝉�����,�U���t���[�ɂ�����Initial Access�ɂ��Đ����ł���
+,,,,,,Initial Access�̗�Ƃ��ăT�[�o�T�C�h�ɕ��ނł���U���̎�@������ł���
+,,,,,,Initial Access�̗�Ƃ��ăN���C�A���g�T�C�h�ɕ��ނł���U���̎�@������ł���
+,3,Execution,2.1,�K�B,Execution�ɕ��ނ����U����@�𗝉�����,�U���t���[�ɂ�����Execution�ɂ��Đ����ł���
+,,,,,,Execution�̗�Ƃ���OS���f�t�H���g�Œ񋟂���\�t�g�E�F�A�����p����U����@������ł���
+,,,,,,Execution�̗�Ƃ���OS���f�t�H���g�Œ񋟂��Ȃ��\�t�g�E�F�A�����p����U����@������ł���
+,4,�U���V�i���I�쐬���K,3.1,�K�B,�U���V�i���I�������ł���悤�ɂȂ�,Reconaissance�`Execution�܂ł̍U����@��ATT&CK��Technique�ƕR�t���čl������
+,,,,,,"���ɍ��킹�čœK��Initial Access, Execution�̎�@��I���ł���"
 Active Directory,,,,,,
-,2,Active Directoryとは,2.1,必達,Active Directoryの概要と利用目的を理解する,Active Directoryの概要と利用目的を説明できる
-,,,2.2,必達,ドメインツリーの概要を理解する,ドメインツリーの概要を説明できる
-,,,2.3,必達,Active Directoryにおけるオブジェクト（管理対象）について理解する,Active Directoryにおけるオブジェクト（管理対象）について説明できる
-,,,2.4,必達,ADにおけるAccess Control Listの概要を理解する,Access Control Listの概要を説明できる
-,,,,,,攻撃者が着目するACLの権限を探すことができ、それを悪用した攻撃を行うことができる
-,,,2.5,必達,Active Directoryにおける認証方式を理解する,Kerberos認証について説明できる
-,,,,,,NTLM認証について説明できる
-,,,,+α,,LDAP認証について説明できる
-,3,Active Directoryに対する攻撃手法,3.1,必達,Active Directoryにおける攻撃手法(情報収集)の概要を理解する,Active Directoryにおけるユーザ情報の確認方法を説明できる
-,,,3.2,必達,Active Directoryにおける攻撃手法(不正ログイン)の概要と対策を理解する,Pass the Ticketについて説明できる
-,,,,,,Pass the Hashについて説明できる
-,,,,,,認証情報を保護する機能について説明できる
-,,,3.3,必達,Windows標準ツールによる攻撃手法について理解する,Windows標準ツールについて説明できる
-,4,攻撃ハンズオン演習,4.1,必達,Pass The Ticketの流れを理解する,lsassのメモリダンプを実行できる
-,,,,,,ダンプした内容からPass The Ticketを実行できる
+,2,Active Directory�Ƃ�,2.1,�K�B,Active Directory�̊T�v�Ɨ��p�ړI�𗝉�����,Active Directory�̊T�v�Ɨ��p�ړI������ł���
+,,,2.2,�K�B,�h���C���c���[�̊T�v�𗝉�����,�h���C���c���[�̊T�v������ł���
+,,,2.3,�K�B,Active Directory�ɂ�����I�u�W�F�N�g�i�Ǘ��Ώہj�ɂ��ė�������,Active Directory�ɂ�����I�u�W�F�N�g�i�Ǘ��Ώہj�ɂ��Đ����ł���
+,,,2.4,�K�B,AD�ɂ�����Access Control List�̊T�v�𗝉�����,Access Control List�̊T�v������ł���
+,,,,,,�U���҂����ڂ���ACL�̌�����T�����Ƃ��ł��A��������p�����U�����s�����Ƃ��ł���
+,,,2.5,�K�B,Active Directory�ɂ�����F�ؕ����𗝉�����,Kerberos�F�؂ɂ��Đ����ł���
+,,,,,,NTLM�F�؂ɂ��Đ����ł���
+,,,,+��,,LDAP�F�؂ɂ��Đ����ł���
+,3,Active Directory�ɑ΂���U����@,3.1,�K�B,Active Directory�ɂ�����U����@(�����W)�̊T�v�𗝉�����,Active Directory�ɂ����郆�[�U���̊m�F���@������ł���
+,,,3.2,�K�B,Active Directory�ɂ�����U����@(�s�����O�C��)�̊T�v�Ƒ΍�𗝉�����,Pass the Ticket�ɂ��Đ����ł���
+,,,,,,Pass the Hash�ɂ��Đ����ł���
+,,,,,,�F�؏���ی삷��@�\�ɂ��Đ����ł���
+,,,3.3,�K�B,Windows�W���c�[���ɂ��U����@�ɂ��ė�������,Windows�W���c�[���ɂ��Đ����ł���
+,4,�U���n���Y�I�����K,4.1,�K�B,Pass The Ticket�̗���𗝉�����,lsass�̃������_���v�����s�ł���
+,,,,,,�_���v�������e����Pass The Ticket�����s�ł���
 PostExploitation,,,,,,
-,"2,3",シナリオ：ハンズオン,2.1,必達,ターゲット環境への侵入後(Post-Exploitation)の戦術やテクニックを理解する,Persistenceについて説明できる
-,,,,,,Privilege Escalationについて説明できる
-,,,,,,Discoveryについて説明できる
-,,,,,,Command and Controlについて説明できる
-,,,,,,Credential Accessについて説明できる
-,,,,,,Lateral Movement について説明できる
-,,攻撃シナリオ作成編（演習）,,,,ターゲット環境への侵入後(Post-Exploitation)の戦術やテクニックをシナリオとして作成できる
-検知回避,,,,,,
-,2,ネットワークセキュリティ,2.1,必達,Webフィルタリングの検知回避技術を理解する,Webフィルタリングの検知回避技術について説明できる
-,,,2.2,必達,IDS/IPSの検知回避技術を理解する,IDS/IPSの検知回避技術について説明できる
-,,,2.3,必達,Sandboxの検知回避技術を理解する,Sandboxの検知回避技術について説明できる
-,3,エンドポイントセキュリティ,3.1,必達,Anti Virusの検知回避技術を理解する,Anti Virusの検知回避技術について説明できる
-,,,3.2,必達,EDRの検知回避技術を理解する,EDRの検知回避技術について説明できる
-解析妨害,,,,,,
-,2,証拠保全,2.1,必達,証拠保全の解析妨害技術を理解する,証拠保全の解析妨害技術について説明できる
-,3,ログ分析,3.1,必達,ログ分析の解析妨害技術を理解する,ログ分析の解析妨害技術について説明できる
-,4,マルウェア解析,4.1,必達,マルウェア解析の解析妨害技術を理解する,マルウェア解析の解析妨害技術について説明できる
+,"2,3",�V�i���I�F�n���Y�I��,2.1,�K�B,�^�[�Q�b�g���ւ̐N����(Post-Exploitation)�̐�p��e�N�j�b�N�𗝉�����,Persistence�ɂ��Đ����ł���
+,,,,,,Privilege Escalation�ɂ��Đ����ł���
+,,,,,,Discovery�ɂ��Đ����ł���
+,,,,,,Command and Control�ɂ��Đ����ł���
+,,,,,,Credential Access�ɂ��Đ����ł���
+,,,,,,Lateral Movement �ɂ��Đ����ł���
+,,�U���V�i���I�쐬�ҁi���K�j,,,,�^�[�Q�b�g���ւ̐N����(Post-Exploitation)�̐�p��e�N�j�b�N���V�i���I�Ƃ��č쐬�ł���
+���m���,,,,,,
+,2,�l�b�g���[�N�Z�L�����e�B,2.1,�K�B,Web�t�B���^�����O�̌��m����Z�p�𗝉�����,Web�t�B���^�����O�̌��m����Z�p�ɂ��Đ����ł���
+,,,2.2,�K�B,IDS/IPS�̌��m����Z�p�𗝉�����,IDS/IPS�̌��m����Z�p�ɂ��Đ����ł���
+,,,2.3,�K�B,Sandbox�̌��m����Z�p�𗝉�����,Sandbox�̌��m����Z�p�ɂ��Đ����ł���
+,3,�G���h�|�C���g�Z�L�����e�B,3.1,�K�B,Anti Virus�̌��m����Z�p�𗝉�����,Anti Virus�̌��m����Z�p�ɂ��Đ����ł���
+,,,3.2,�K�B,EDR�̌��m����Z�p�𗝉�����,EDR�̌��m����Z�p�ɂ��Đ����ł���
+��͖W�Q,,,,,,
+,2,�؋��ۑS,2.1,�K�B,�؋��ۑS�̉�͖W�Q�Z�p�𗝉�����,�؋��ۑS�̉�͖W�Q�Z�p�ɂ��Đ����ł���
+,3,���O����,3.1,�K�B,���O���͂̉�͖W�Q�Z�p�𗝉�����,���O���͂̉�͖W�Q�Z�p�ɂ��Đ����ł���
+,4,�}���E�F�A���,4.1,�K�B,�}���E�F�A��͂̉�͖W�Q�Z�p�𗝉�����,�}���E�F�A��͂̉�͖W�Q�Z�p�ɂ��Đ����ł���

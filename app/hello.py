@@ -24,7 +24,7 @@ def detail():
     return render_template("detail.html", data=data) # templatesフォルダ内のindex.htmlを表示する
 
 def read_csv(filename):
-    with open('./data/' + filename, mode='r', encoding='utf-8') as f:
+    with open('./data/' + filename, mode='r', encoding='shift-jis') as f:
         data = f.readlines()
     # csv_file = open(os.getcwd() + "/app/data/" + str(filename), mode="r", encoding="ms932", errors="", newline="" )
     # f = csv.reader(csv_file, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
