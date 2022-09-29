@@ -2,12 +2,10 @@
 {% block title %}トップ - {{ super() }}{% endblock %}
 {% block content %}
 
-<h2>見出し</h2>
-<p>コンテンツ</p>
-
-<table border="1">
+<div class="container-fluid">
+  <table border="1" class="table table-striped">
     <tr>
-      <th>分類</th> <th>CSVダウンロード</th> <th>詳細</th>
+      <th scope="col" >分類</th> <th scope="col">CSVダウンロード</th> <th scope="col">詳細</th>
     </tr>
     <tr>
       <td>政治</td>
@@ -43,5 +41,6 @@
       </td>
     </tr>
 </table>
+</div>
 
 {% endblock %}
