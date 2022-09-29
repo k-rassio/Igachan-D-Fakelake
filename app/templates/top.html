@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% block title %}トップ - {{ super() }}{% endblock %}
 {% block content %}
-<h2>見出し</h2>
-<p>コンテンツ</p>
+<div class="container-fluid">
+    <h2>見出し</h2>
+</div>
+<div class="container-fluid">
+    <p>コンテンツ</p>
+</div>
 <form action="/download", method="get">
-    <button type="submit">CSVダウンロード</button>
+    <button type="submit" class="btn btn-primary">CSVダウンロード</button>
 </form>
 {% endblock %}
