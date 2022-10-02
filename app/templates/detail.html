@@ -1,15 +1,30 @@
-<table>
-    {% for line in data %}
-    <tr>
-    {% if loop.index == 1 %}
-        {% for cell in line %}
-        <th>{{ cell }}</th>
-        {% endfor %}
-    {% else %}
-        {% for cell in line %}
-        <td>{{ cell }}</td>
-        {% endfor %}
-    {% endif %}
-    </tr>
-    {% endfor %}
-</table>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS読込 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>{% block title %}詳細{% endblock %}</title>
+</head>
+<body>
+    <div class="table-responsive">
+        <table border="0" class="table text-nowrap">
+            {% for line in data %}
+            <tr>
+            {% if loop.index == 1 %}
+                {% for cell in line %}
+                <th scope="col">{{ cell }}</th>
+                {% endfor %}
+            {% else %}
+                {% for cell in line %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            {% endif %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+

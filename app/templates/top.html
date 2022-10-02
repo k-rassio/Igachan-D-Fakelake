@@ -11,14 +11,14 @@
 <div class="container">
   <table border="0.3" class="table">
     <tr class="table-secondary">
-      <th scope="col">分類</th> <th scope="col">CSVダウンロード</th> <th scope="col">詳細</th>
+      <th scope="col">分類</th> <th scope="col">ダウンロード</th> <th scope="col">詳細</th>
     </tr>
     {% for key, value in cat_url.items() %}
     <tr>
       <td>{{ key }}</td>
       <td>
         <form action="/download", method="get">
-            <button type="submit" class="btn btn-outline-secondary" name="csv_name" value="{{ value }}">ダウンロード</button>
+            <button type="submit" class="btn btn-outline-secondary" name="csv_name" value="{{ value }}">CSV</button>
         </form>
       </td>
       <td>
