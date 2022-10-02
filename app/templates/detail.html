@@ -1,1 +1,15 @@
-{{ data }}
+<table>
+    {% for line in data %}
+    <tr>
+    {% if loop.index == 1 %}
+        {% for cell in line %}
+        <th>{{ cell }}</th>
+        {% endfor %}
+    {% else %}
+        {% for cell in line %}
+        <td>{{ cell }}</td>
+        {% endfor %}
+    {% endif %}
+    </tr>
+    {% endfor %}
+</table>

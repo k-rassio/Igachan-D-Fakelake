@@ -25,9 +25,7 @@ def detail():
 
 def read_csv(filename):
     with open('./data/' + filename, mode='r', encoding='shift-jis') as f:
-        data = f.readlines()
-    # csv_file = open(os.getcwd() + "/app/data/" + str(filename), mode="r", encoding="ms932", errors="", newline="" )
-    # f = csv.reader(csv_file, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
+        data = list(csv.reader(f))
     return data
 
 if __name__ == '__main__':
