@@ -1,18 +1,24 @@
 {% extends "base.html" %}
 {% block title %}トップ - {{ super() }}{% endblock %}
 {% block content %}
-
-<div class="container-fluid">
-  <table border="1" class="table table-striped">
-    <tr>
-      <th scope="col" >分類</th> <th scope="col">CSVダウンロード</th> <th scope="col">詳細</th>
+<div class="container">
+  <p>Igachan's fakelakeの操作は簡単です。さっそくはじめましょう。</p>
+  <ul>
+    <li>ダウンロードボタンを押下し分類ごとのCSVをダウンロードできます</li>
+    <li>詳細リンクを押下することでCSVデータのサンプルを確認することができます</li>
+  </ul>
+</div>
+<div class="container">
+  <table border="0.3" class="table">
+    <tr class="table-secondary">
+      <th scope="col">分類</th> <th scope="col">CSVダウンロード</th> <th scope="col">詳細</th>
     </tr>
     {% for key, value in cat_url.items() %}
     <tr>
       <td>{{ key }}</td>
       <td>
         <form action="/download", method="get">
-            <button type="submit" name="csv_name" value="{{ value }}">ダウンロード</button>
+            <button type="submit" class="btn btn-outline-secondary" name="csv_name" value="{{ value }}">ダウンロード</button>
         </form>
       </td>
       <td>
@@ -20,7 +26,7 @@
       </td>
     </tr>
     {% endfor %}
-</table>
+  </table>
 </div>
 
 {% endblock %}
