@@ -1,4 +1,13 @@
 # Igachan-s-Fakelake
+## ローカルでの立ち上げ
+- ソースコードを取得します  
+`git clone https://github.com/Keisuke-Igarashi/Igachan-D-Fakelake.git`  
+- 環境変数を設定します
+```export FLASK_APP=hello
+export FLASK_ENV=development
+cd app/
+flask run --host=0.0.0.0```
+
 
 ## dockerコンテナの立ち上げ  
 ### 前提条件
