@@ -18,11 +18,12 @@
       <td>{{ key }}</td>
       <td>
         <form action="/download", method="get">
-            <button type="submit" class="btn btn-outline-secondary" name="csv_name" value="{{ value }}">CSV</button>
+            <button type="submit" class="btn btn-outline-secondary" name="fname_ext" value="{{ value }},csv">CSV</button>
+            <button type="submit" class="btn btn-outline-secondary" name="fname_ext" value="{{ value }},json">JSON</button>
         </form>
       </td>
       <td>
-        <a href="{{ url_for('detail') }}?csv_name={{ value }}" target="_blank">詳細</a>
+        <a href="{{ url_for('detail') }}?file_name={{ value }}" target="_blank">詳細</a>
       </td>
     </tr>
     {% endfor %}
