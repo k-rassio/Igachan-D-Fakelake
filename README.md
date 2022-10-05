@@ -7,7 +7,7 @@
 ### コマンド
 - ソースコードを取得します  
 `git clone https://github.com/Keisuke-Igarashi/Igachan-D-Fakelake.git`  
-- ディレクトリ移動します
+- ディレクトリ移動します  
 `cd Igachan-D-Fakelake/  `
 - dockerイメージをビルドします  
 `sudo docker build --tag igachan-d-fakelake .`  
