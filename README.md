@@ -27,7 +27,7 @@ flask run --host=0.0.0.0
 `sudo docker run -d -p 8000:5000 igachan-d-fakelake `  
 
 ## csvの拡張子について
-- shift-jisでの管理とする
+- 文字コードutf8での管理とする
 
 ## 集めたデータについて
 - データ収集サイト（情報源）
