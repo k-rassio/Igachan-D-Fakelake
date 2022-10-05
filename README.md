@@ -43,7 +43,7 @@ flask run --host=0.0.0.0
   - 引用の仕方、 載っている情報等、詳細は各社のガイドラインを参照してください。
     - https://www.buzzfeed.com/jp/shani/the-buzzfeed-editorial-standards-and-ethics-guide-1
     - https://infact.press/factcheck-policy/
-  - csvのカラムは以下の通り
+- csvのカラムは以下の通り
 
 | カラム名                 | カラムの説明                                                                                                         | 
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------- | 
