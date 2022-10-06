@@ -10,7 +10,7 @@
 `git clone https://github.com/Keisuke-Igarashi/Igachan-D-Fakelake.git`  
 - ディレクトリ移動します  
 `cd Igachan-D-Fakelake`  
-- venv環境を作成します。
+- venv環境を作成します。  
 `python3 -m venv venv`  
 - 環境を有効化します。
 `. venv/bin/activate`
