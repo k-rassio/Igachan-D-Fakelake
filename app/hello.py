@@ -15,7 +15,7 @@ def top():
 def download():
     csv_name = request.args.get('fname_ext').split(',')[0]
     extention = request.args.get('fname_ext').split(',')[1]
-    csv_path = './data/csv/' + csv_name
+    csv_path = '/Igachan-D-Fakelake/app/data/csv/' + csv_name
     if extention == 'csv':
         return send_file(csv_path, as_attachment=True, download_name=csv_name, mimetype='text/csv')
     elif extention == 'json':
@@ -26,7 +26,7 @@ def download():
 
         # JSONファイルへの書き込み
         json_name = csv_name.replace('csv', 'json')
-        json_path = './data/json/' + json_name
+        json_path = '/Igachan-D-Fakelake/app/data/json/' + json_name
         with open(file=json_path, mode='w', encoding="utf-8") as f:
             json.dump(d_list, f, ensure_ascii=False)
         return send_file(json_path, as_attachment=True, download_name=json_name, mimetype='application/json')
@@ -39,7 +39,7 @@ def detail():
     return render_template("detail.html", data=data) # templatesフォルダ内のindex.htmlを表示する
 
 def read_csv(file_name):
-    with open('./data/csv/' + file_name, mode='r', encoding="utf-8") as f:
+    with open('/Igachan-D-Fakelake/app/data/csv/' + file_name, mode='r', encoding="utf-8") as f:
         data = list(csv.reader(f))
     return data
 
