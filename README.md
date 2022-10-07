@@ -1,26 +1,6 @@
 # Igachan-s-Fakelake
 
 ## アプリ実行方法
-### ホストPC(Linux)での実行
-### 前提条件
-- pythonがインストールされていること
-
-### コマンド
-- ソースコードを取得します  
-`git clone https://github.com/Keisuke-Igarashi/Igachan-D-Fakelake.git`  
-- ディレクトリ移動します  
-`cd Igachan-D-Fakelake`  
-- venv環境を作成します。  
-`python3 -m venv venv`  
-- 環境を有効化します。
-`. venv/bin/activate`
-- Flaskのインストール  
-`pip install Flask`  
-- 環境変数の設定
-`export FLASK_APP=./app/hello`
-- アプリ実行
-`flask run --host=0.0.0.0`  
-
 ### dockerコンテナでの実行  
 ### 前提条件
 - pythonがインストールされていること
